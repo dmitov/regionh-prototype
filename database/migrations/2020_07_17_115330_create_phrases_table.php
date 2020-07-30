@@ -19,7 +19,7 @@ class CreatePhrasesTable extends Migration
             $table->bigInteger('user_id')->unsigned();
             $table->text('content');
             $table->text('metadata');
-            $table->string('status');
+            $table->string('status')->default('draft');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
