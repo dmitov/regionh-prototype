@@ -20,6 +20,7 @@
                         @include('phrases._form', [
                             'method' => 'POST',
                             'action' => route('phrases.store'),
+                            'disabled' => false,
                         ])
                     </div>
                 </div>
